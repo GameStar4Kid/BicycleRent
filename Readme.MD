@@ -8,6 +8,7 @@
 - Configuration
 	+ Open Terminal and move to source folder
 	+ run "pod install"
+	
 ***Prepare source***
 
 - Open push-demo.xcworkspace
