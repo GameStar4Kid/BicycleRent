@@ -31,6 +31,7 @@
 - Not document all features in source
 
 4. Feedback
+
 - Jitensha-RestfulApi.pdf is not correct with API rent
 it should be POST, not GET
 
@@ -52,6 +53,5 @@ it should be POST, not GET
 		Can not understand why this happen, but I think we should try an other solution, do not need use CardIO, because requirement don't include validate credit card information.
 
 7. Demo
-
 
 [![Demo](https://j.gifs.com/wpll5m.gif)](https://www.youtube.com/watch?v=89MeaELIlG8)
