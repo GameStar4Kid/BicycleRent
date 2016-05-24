@@ -50,3 +50,6 @@ it should be POST, not GET
 	- PaymentContrller storyboard is error with <Card Number Text Field>(open source bug)
 		-> Solution: delete <Card Number Text Field> and build, then restore that item and build.
 		Can not understand why this happen, but I think we should try an other solution, do not need use CardIO, because requirement don't include validate credit card information.
+
+7. Demo
+[![Demo ](http://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=89MeaELIlG8)
