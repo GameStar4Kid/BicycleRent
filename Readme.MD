@@ -1,4 +1,4 @@
-1. Install & Configure
+***Install & Configure***
 
 - XCode 7.3
 - Swift 2.2
@@ -8,13 +8,13 @@
 - Configuration
 	+ Open Terminal and move to source folder
 	+ run "pod install"
-2. Prepare source
+***Prepare source***
 
 - Open push-demo.xcworkspace
 - Build with device or simulator
 - Start server with node.js
 
-3. Limitation and Missing Requirement
+***Limitation and Missing Requirement***
 
 - ***IMPORTANT*** There are a open source bug with CardIO in <Card Number Text Field> in Payment Scene, when open Payment screen sometimes it can not load Payment screen, we need delete <Card Number Text Field> and build again, then restore <Card Number Text Field> and build, it will work correct, this should be fixed in next version.
 
@@ -30,12 +30,12 @@
 - Not check network problem
 - Not document all features in source
 
-4. Feedback
+***Feedback***
 
 - Jitensha-RestfulApi.pdf is not correct with API rent
 it should be POST, not GET
 
-5. Open source
+***Open source***
 
 'MBProgressHUD', '~> 0.9.2'
 'Alamofire', '~> 3.4'
@@ -45,13 +45,13 @@ it should be POST, not GET
 'CardIO'
 'Caishen'
 
-6. Problems and Solutions
+***Problems and Solutions***
 	- Can not detect action when touch button Rent in MapViewController
 		-> Solution: we can catch user touch into whole window info -> it should be improved
 	- PaymentContrller storyboard is error with <Card Number Text Field>(open source bug)
 		-> Solution: delete <Card Number Text Field> and build, then restore that item and build.
 		Can not understand why this happen, but I think we should try an other solution, do not need use CardIO, because requirement don't include validate credit card information.
 
-7. Demo
+***Demo***
 
 [![Demo](https://j.gifs.com/wpll5m.gif)](https://www.youtube.com/watch?v=89MeaELIlG8)
