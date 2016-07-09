@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 class Services: NSObject {
     func login(username:String,password:String,completion: (result: String)->Void){
-        Alamofire.request(.POST, "http://192.168.100.3:8080/api/v1/auth", parameters: ["email" : username,
+        Alamofire.request(.POST, "http://ec2-52-38-5-128.us-west-2.compute.amazonaws.com/api/v1/auth", parameters: ["email" : username,
             "password" : password ])
             .responseJSON { response in
                 
@@ -33,7 +33,7 @@ class Services: NSObject {
         }
     }
     func register(username:String,password:String,completion: (result: String)->Void){
-        Alamofire.request(.POST, "http://192.168.100.3:8080/api/v1/register", parameters: ["email" : username,
+        Alamofire.request(.POST, "http://ec2-52-38-5-128.us-west-2.compute.amazonaws.com/api/v1/register", parameters: ["email" : username,
             "password" : password ])
             .responseJSON { response in
                 
@@ -57,7 +57,7 @@ class Services: NSObject {
     }
     func getPlaces(token:String,completion: (result: AnyObject)->Void)
     {
-        let URL = "http://192.168.100.3:8080/api/v1/places"
+        let URL = "http://ec2-52-38-5-128.us-west-2.compute.amazonaws.com/api/v1/places"
         let headers = [
             "Authorization": token
         ]
@@ -80,7 +80,7 @@ class Services: NSObject {
     }
     func sendPayment(token:String,num:String,name:String,code:String,expire:String,completion: (result: Bool)->Void)
     {
-        let URL = "http://192.168.100.3:8080/api/v1/rent"
+        let URL = "http://ec2-52-38-5-128.us-west-2.compute.amazonaws.com/api/v1/rent"
         let headers = [
             "Authorization": token
         ]
